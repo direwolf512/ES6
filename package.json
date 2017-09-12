@@ -1,0 +1,23 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "description": "learn ES6",
+  "main": "index.html",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  },
+  "scripts": {
+    "build": "babel js --watch --out-dir dist --ignore *-compiled.js,ignore.js",
+    "merge": "babel js --watch --out-file dist/all.js --ignore ignore.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

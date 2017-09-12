@@ -1,0 +1,1 @@
+{"version":3,"sources":["ignore.js"],"names":[],"mappings":"AAAA;;;;AAIA;;AACA,IAAI,QAAQ,MAAZ","file":"ignore-compiled.js","sourcesContent":["/**\r\n * @fileOverview\r\n * @author jywang\r\n */\r\n'use strict';\r\nlet title = '忽略文件';"]}

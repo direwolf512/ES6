@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.js"],"names":[],"mappings":"AAAA;;;;AAIA;;AACA,IAAI,IAAI,SAAR;AACA,IAAI,IAAI,OAAR","file":"test-compiled.js","sourcesContent":["/**\r\n * @fileOverview\r\n * @author jywang\r\n */\r\n'use strict';\r\nlet a = 'aaaaaaa';\r\nlet b = 'bbbbb';"]}
