@@ -89,34 +89,3 @@ console.log(_typeof(('' + { Object: Object }).prototype));
   }
   console.log(arr);
 })();
-/**
- * @fileOverview
- * @author jywang
- */
-'use strict';
-
-var title = '忽略文件';
-
-//# sourceMappingURL=ignore-compiled.js.map
-/**
- * @fileOverview
- * @author jywang
- */
-"use strict";
-/**
- * @fileOverview
- * @author jywang
- */
-'use strict';
-
-var a = 'aaaaaaa';
-var b = 'bbbbb';
-
-//# sourceMappingURL=test-compiled.js.map
-/**
- * @fileOverview
- * @author jywang
- */
-'use strict';
-
-var title = 'test';
