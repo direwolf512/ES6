@@ -6,19 +6,24 @@
 "use strict";
 
 let title = 'index';
-console.log("title--------------" + title)
+console.log("title--------------" + title);
 
-let a = 11111111111;
-((a) => {
-  console.log("a-------------" + a);
-})();
-
-let name = 'asdffg';
+/* 块级作用域 */
+var name2 = 'asdffg';
 while (true) {
-  let name = '对方水电费';
-  console.log("name-------------" + name);
+  var name2 = 'var';
+  console.log("name-var-------------" + name2);
   break;
 }
+console.log("name-------------" + name2);
+
+let name1 = 'asdffg';
+while (true) {
+  let name1 = 'let';
+  console.log("name-let-------------" + name1);
+  break;
+}
+console.log("name-------------" + name1);
 
 var b = [];
 for (var i = 0; i < 5; i++) {
@@ -36,24 +41,89 @@ for (let i = 0; i < 5; i++) {
 }
 c[3]();
 
+/* 变量提升 */
+console.log(up1);
+var up1 = 'aaaa';//undefined
+
+console.log(up2);
+let up2 = 'aaaa';//报错
+
 var lis1 = document.getElementsByClassName('tap1');
 for (var i = 0; i < lis1.length; i++) {
   lis1[i].onclick = function() {
-    console.log(i);//5 5 5 5 5
+    alert(i);//5 5 5 5 5
   }
 }
-
+/* 闭包 */
 var lis2 = document.getElementsByClassName('tap2');
 for (var j = 0; j < lis2.length; j++) {
   (function(j) {
     lis2[j].onclick = function() {
-      console.log(j)
+      alert(j)
     }
   })(j);
 }
+/* 作用域 */
+var lis3 = document.getElementsByClassName('tap3');
+for (let k = 0; k < lis3.length; k++) {
+  lis3[k].onclick = function() {
+    alert(k);
+  }
+}
+
+/* 解构赋值 */
+/* 数组 */
+let [arg1, arg2, arg3] = [1, 2, 3];
+console.log(arg1);
+console.log(arg2);
+console.log(arg3);
+
+let [arg21, [arg22], arg23] = [1, [2, 3, 4], 5];
+console.log(arg21);
+console.log(arg22);//不完全解构
+console.log(arg23);
+
+//报错，因为右侧不是数组
+/*let [arg31] = 1;
+let [arg41] = false;
+let [arg51] = NaN;
+let [arg61] = undefined;
+let [arg71] = null;
+let [arg81] = {};*/
+
+/* 对象 */
+//同名
+var {obj1, obj2} = {
+  obj1: 111111,
+  obj2: 222222
+};
+console.log(obj1);//111111
+console.log(obj2);//222222
+
+//不同名
+var {obj3: obja, obj4: objb} = {
+  obj3: 111111,
+  obj4: 222222
+};
+/*console.log(obj3);//报错
+console.log(obj4);//报错*/
+console.log(obja);//111111
+console.log(objb);//222222
+
+/* 字符串 */
+let [str1, str2, str3, str4, str5] = 'hello';
+console.log(str1);//h
+console.log(str2);//e
+console.log(str3);//l
+console.log(str4);//l
+console.log(str5);//o
+
+let {length: len} = 'hello';
+console.log(len);//5
+
 
 //var btn=document.getElementsByTagName('button')[0]
-var btn = document.getElementById('btn');
+/*var btn = document.getElementById('btn');
 var btn1 = document.getElementsByTagName('button');
 var btn2 = document.getElementsByClassName('btnC');
 console.log(btn);
@@ -61,13 +131,12 @@ console.log(btn1[0]);
 console.log(btn2[0]);
 btn.onclick = function() {
   alert(1111);
-};
+};*/
 
 class Animal {
   constructor () {
     this.type = 'animal'
   }
-
   says (say) {
     console.log(this.type + ' says ' + say)
   }
@@ -105,6 +174,7 @@ class Hehe {
 var hehe = new Hehe();
 hehe.says('hi');
 
+/* 模板字符串 */
 var box = document.getElementById('box');
 var h1Con = document.createElement('h1');
 h1Con.innerHTML = 'h1';
@@ -121,6 +191,20 @@ $('#box').append(`
   There are <h2>${con1}<h2><h3>${con2}<h3><p>${con3}</p>
 `)
 
+/* 箭头函数 */
+let a = 11111;
+let aaa = (a) => {
+  return console.log('a---------' + a);
+};
+aaa(a);//11111
+
+let cccc = 'ccc111';
+let ccc = (cccc = 'ccc222') => {
+  console.log("cccc-------------" + cccc);
+};
+ccc('ccc333');//ccc333
+
+
 function nums (...types) {
   console.log(types);
 }
@@ -130,11 +214,7 @@ nums(1, 2, 3, 4);
  (bbbb)=>{console.log(bbbb)}
  */
 
-let cccc = 11111111111;
-let ccc = (cccc = 1111)=> {
-  console.log("cccc-------------" + cccc);
-};
-ccc(222222);
+
 
 
 let ee = 0b111;
