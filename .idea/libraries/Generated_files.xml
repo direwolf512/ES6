@@ -2,18 +2,14 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/test-compiled-compiled.js" />
-        <item url="file://$PROJECT_DIR$/dist/ignore-compiled-compiled.js" />
-        <item url="file://$PROJECT_DIR$/dist/test-compiled.js" />
         <item url="file://$PROJECT_DIR$/js/ignore-compiled.js" />
+        <item url="file://$PROJECT_DIR$/js/index-compiled.js" />
         <item url="file://$PROJECT_DIR$/js/test-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/js/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/index-compiled.js" />
-      <root url="file://$PROJECT_DIR$/js/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/dist/try-compiled.js" />
       <root url="file://$PROJECT_DIR$/dist/try-compiled.js" />
@@ -23,15 +19,15 @@
       <root url="file://$PROJECT_DIR$/js/all.js" />
       <root url="file://$PROJECT_DIR$/try.js" />
       <root url="file://$PROJECT_DIR$/try-compiled-compiled-compiled-compiled-compiled.js" />
-      <root url="file://$PROJECT_DIR$/js/exercises.js" />
       <root url="file://$PROJECT_DIR$/js/all.js" />
       <root url="file://$PROJECT_DIR$/try.js" />
-      <root url="file://$PROJECT_DIR$/js/exercises.js" />
       <root url="file://$PROJECT_DIR$/dist/test-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/dist/ignore-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/dist/test-compiled.js" />
       <root url="file://$PROJECT_DIR$/js/ignore-compiled.js" />
+      <root url="file://$PROJECT_DIR$/js/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/js/test-compiled.js" />
+      <root url="file://$PROJECT_DIR$/js/exercises.js" />
     </CLASSES>
     <SOURCES />
   </library>

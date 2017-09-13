@@ -324,3 +324,5 @@ console.log("true------" + Number.isNaN(true));
 console.log("9/NaN------" + Number.isNaN(9 / NaN));
 console.log("'true'/0------" + Number.isNaN('true' / 0));
 console.log("'true'/'true'------" + Number.isNaN('true' / 'true'));
+
+//# sourceMappingURL=index-compiled.js.map

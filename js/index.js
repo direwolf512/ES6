@@ -5,6 +5,7 @@
 
 "use strict";
 
+
 let title = 'index';
 console.log("title--------------" + title);
 
@@ -46,7 +47,7 @@ console.log(up1);
 var up1 = 'aaaa';//undefined
 
 console.log(up2);
-let up2 = 'aaaa';//报错
+let up2 = 'aaaaa';//报错
 
 var lis1 = document.getElementsByClassName('tap1');
 for (var i = 0; i < lis1.length; i++) {
@@ -78,7 +79,7 @@ console.log(arg1);
 console.log(arg2);
 console.log(arg3);
 
-let [arg21, [arg22], arg23] = [1, [2, 3, 4], 5];
+let [arg21, [arg22], arg23] = ['1', [2, 3, 4], 5];
 console.log(arg21);
 console.log(arg22);//不完全解构
 console.log(arg23);
@@ -214,11 +215,8 @@ nums(1, 2, 3, 4);
  (bbbb)=>{console.log(bbbb)}
  */
 
-
-
-
-let ee = 0b111;
-let ff = 0o111;
+let ee = 0b111;//2进制
+let ff = 0o111;//8进制
 console.log(Number(ee));//7
 console.log(Number(ff));//73
 

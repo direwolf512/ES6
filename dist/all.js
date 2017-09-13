@@ -164,7 +164,7 @@ console.log(up1);
 var up1 = 'aaaa'; //undefined
 
 console.log(up2);
-var up2 = 'aaaa'; //报错
+var up2 = 'aaaaa'; //报错
 
 var lis1 = document.getElementsByClassName('tap1');
 for (var i = 0; i < lis1.length; i++) {
@@ -204,7 +204,7 @@ console.log(arg1);
 console.log(arg2);
 console.log(arg3);
 
-var arg21 = 1,
+var arg21 = '1',
     _ref = [2, 3, 4],
     arg22 = _ref[0],
     arg23 = 5;
@@ -391,8 +391,8 @@ nums(1, 2, 3, 4);
  (bbbb)=>{console.log(bbbb)}
  */
 
-var ee = 7;
-var ff = 73;
+var ee = 7; //2进制
+var ff = 73; //8进制
 console.log(Number(ee)); //7
 console.log(Number(ff)); //73
 
