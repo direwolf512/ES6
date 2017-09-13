@@ -3,6 +3,10 @@
  * @author jywang
  */
 
+
+let title = 'exercises';
+console.log("title--------------" + title)
+
 console.log((function(x, f = () => x) {
   var x;
   var y = x;

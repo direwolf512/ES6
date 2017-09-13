@@ -17,6 +17,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @author jywang
  */
 
+var title = 'exercises';
+console.log("title--------------" + title);
+
 console.log(function (x) {
   var f = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {
     return x;
